@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/merchant__details_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backgroundcolor"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@color/backgroundcolor"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/name_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/textgray"
+                        android:textSize="15sp" />
+
+                    <RatingBar
+                        android:id="@+id/details_ratingBar"
+                        style="@style/rankRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/name_textView"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:rating="4.3" />
+
+                    <TextView
+                        android:id="@+id/detail_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/details_ratingBar"
+                        android:layout_marginLeft="14dp"
+                        android:layout_toRightOf="@+id/name_textView"
+                        android:text="暂无评论"
+                        android:textColor="@color/textgray"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:id="@+id/photo_linearlayout"
+                        android:layout_width="270dp"
+                        android:layout_height="90dp"
+                        android:orientation="horizontal" >
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/image1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="fitXY" />
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/image2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="fitXY"/>
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/image3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="fitXY" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/photo_linearlayout"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp" >
+
+                        <RelativeLayout
+                            android:id="@+id/layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true" >
+
+                            <Button
+                                android:id="@+id/pro_dianzan"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/pro_zan_sel" />
+
+                            <Button
+                                android:id="@+id/pro_dianzan_sel"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/pro_zan_unsel"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tv_like_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/layout"
+                            android:paddingTop="15dp"
+                            android:text="100"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tv_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginBottom="40dp"
+                            android:layout_marginRight="37dp"
+                            android:text="+1"
+                            android:textColor="#A24040"
+                            android:textSize="18dip"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 门店地址 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="门店地址"
+                    android:textColor="@color/textgray"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/green" />
+
+                <TextView
+                    android:id="@+id/seller_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_location"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="xx市xx路xx街xx号"
+                    android:textColor="@color/textgray"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <!-- 门店联系方式 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="联系方式"
+                    android:textColor="@color/textgray"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/green" />
+
+                <TextView
+                    android:id="@+id/seller_link"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_phone"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="2142141"
+                    android:textColor="@color/textgray"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <!-- 商家评论 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                android:paddingTop="15dp" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="用户评论"
+                        android:textColor="@color/textgray"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/say_something"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/button_participate"
+                        android:padding="2dp"
+                        android:text="我要评论" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/green" />
+
+                <ListView
+                    android:id="@+id/comment_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@color/transparentgray"
+                    android:dividerHeight="1dp" >
+                </ListView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

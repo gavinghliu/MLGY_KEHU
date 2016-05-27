@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="92dp"
+    android:background="@color/backgroundcolor"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/backgroundcolor" >
+
+        <RelativeLayout
+            android:id="@+id/rl_merchant_item"
+            android:layout_width="fill_parent"
+            android:layout_height="90dp"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/name_merchant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/image_merchant"
+                android:text="测试_商家名"
+                android:textColor="@color/textgray"
+                android:textSize="17sp" />
+
+            <com.android.volley.toolbox.NetworkImageView 
+                android:id="@+id/image_merchant"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:paddingTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:paddingRight="10dp"
+                android:scaleType="fitXY" />
+
+            <RatingBar
+                android:id="@+id/ratingBar1"
+                style="@style/rankRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/name_merchant"
+                android:layout_below="@+id/name_merchant"
+                android:layout_marginTop="10dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="4.3" />
+
+            <TextView
+                android:id="@+id/address_merchant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/image_merchant"
+                android:layout_alignLeft="@+id/ratingBar1"
+                android:paddingTop="10dp"
+                android:maxEms="9"
+                android:singleLine="true"
+                android:text="价格：1000"
+                android:textColor="@color/linegray"
+                android:textSize="15sp" 
+                android:visibility="visible"/>
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                />
+            
+            <TextView
+                android:id="@+id/service_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:maxEms="12"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text="2014-08-17"
+                android:textColor="@color/linegray"
+                android:textSize="15sp" 
+                android:visibility="gone"/>
+            
+             <TextView
+                android:id="@+id/service_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:maxEms="12"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text="已评论"
+                android:textColor="@color/linegray"
+                android:textSize="15sp" 
+                android:visibility="gone"/>
+            
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

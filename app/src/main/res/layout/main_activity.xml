@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/green"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/green"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="首页"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_zhazhi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="最新分享"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="@color/backgroundcolor" >
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_tongzhi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="新闻速递"
+            android:textColor="@color/textgray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/line_zhazhi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/green" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line_tongzhi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/green"
+            android:visibility="invisible" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/top_background"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/search_btn_background"
+                android:gravity="center"
+                android:text="搜索"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/rlSearchFrameDelete"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/btnSearch"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical" >
+
+                <EditText
+                    android:id="@+id/etSearch"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/search_frame"
+                    android:hint="搜索"
+                    android:paddingLeft="32dp"
+                    android:singleLine="true"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/ivDeleteText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:paddingRight="20dp"
+                    android:src="@drawable/delete"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    
+     <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/focuesIv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"/>
+
+    <ListView
+        android:id="@+id/listview_zhazhi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_weight="8"
+        android:cacheColorHint="#00000000"
+        android:divider="@android:color/transparent"
+        android:fadingEdge="none"
+        android:visibility="gone" >
+    </ListView>
+
+    <ListView
+        android:id="@+id/listview_tongzhi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</LinearLayout>

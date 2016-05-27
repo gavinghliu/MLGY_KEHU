@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/green"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/comment_back"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/green"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/green"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="用户评论"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageview_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_home_as_up_indicator" />
+
+            <TextView
+                android:id="@+id/imageview_back2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@id/imageview_back"
+                android:text="返回"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="8"
+            android:gravity="left"
+            android:text="我的账户"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/rank1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/rate_star_medium_off" />
+
+                <ImageView
+                    android:id="@+id/rank2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/rate_star_medium_off"
+                    android:paddingLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/rank3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/rate_star_medium_off"
+                    android:paddingLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/rank4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/rate_star_medium_off"
+                    android:paddingLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/rank5"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/rate_star_medium_off"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/comment_content"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="15dp"
+                android:hint="评论" />
+
+            <Button
+                android:id="@+id/comment_button"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@color/green"
+                android:text="评  论"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

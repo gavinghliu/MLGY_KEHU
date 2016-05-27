@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundcolor"
+        android:focusable="false"
+        android:paddingBottom="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/commemt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:text="name"
+                android:textColor="@color/textgray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/commemt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="10dp"
+                android:text="time"
+                android:textColor="@color/textgray"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/commemt_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="content"
+            android:textColor="@color/textgray"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/ratingBar1"
+        style="@style/rankRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="4.3" />
+
+</RelativeLayout>

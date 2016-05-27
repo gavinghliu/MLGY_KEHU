@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/Ma_for_Hao/work/HomeCode/AS/MeiTuanClient/app/libs/jxl.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="a6f224353653001716448dec51065d050ac782b7">
+        <dex dex="/Users/Ma_for_Hao/work/HomeCode/AS/MeiTuanClient/app/build/intermediates/pre-dexed/release/jxl-753656a7cd1dbf874b51c99e413bd2556c662f55.jar" />
+    </item>
+    <item
+        jar="/Users/Ma_for_Hao/work/HomeCode/AS/MeiTuanClient/app/libs/poi-3.7-20101029.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="581aca996554d760c02b281ac1f9efb785de54be">
+        <dex dex="/Users/Ma_for_Hao/work/HomeCode/AS/MeiTuanClient/app/build/intermediates/pre-dexed/release/poi-3.7-20101029-39618f32adbd0da11656ae4a9825c0eb41edcb53.jar" />
+    </item>
+    <item
+        jar="/Users/Ma_for_Hao/work/HomeCode/AS/MeiTuanClient/app/libs/locSDK_3.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="09224a1883da8b5bd37e766f4fab80570d879898">
+        <dex dex="/Users/Ma_for_Hao/work/HomeCode/AS/MeiTuanClient/app/build/intermediates/pre-dexed/release/locSDK_3.1-0893299ab51b26416402812f2f51032941160ebd.jar" />
+    </item>
+    <item
+        jar="/Users/Ma_for_Hao/work/HomeCode/AS/MeiTuanClient/app/libs/baidumapapi_v3_1_0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="166e529353682810f369946f3ce75ddb3e85e664">
+        <dex dex="/Users/Ma_for_Hao/work/HomeCode/AS/MeiTuanClient/app/build/intermediates/pre-dexed/release/baidumapapi_v3_1_0-c2ecd88de20da62da6c116931a242d22c5561a57.jar" />
+    </item>
+    <item
+        jar="/Users/Ma_for_Hao/work/HomeCode/AS/MeiTuanClient/app/libs/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ab78ed461deab5206c4cac6bbcf60e6d963cfd85">
+        <dex dex="/Users/Ma_for_Hao/work/HomeCode/AS/MeiTuanClient/app/build/intermediates/pre-dexed/release/classes-9b8a3dad7f4b09d6fb2bf4e19d6bbe1f99793c0d.jar" />
+    </item>
+    <item
+        jar="/Users/Ma_for_Hao/work/HomeCode/AS/MeiTuanClient/app/libs/ftp4j-1.7.2.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="abd6a2ba75b142926052c4538611efda49e0b0e2">
+        <dex dex="/Users/Ma_for_Hao/work/HomeCode/AS/MeiTuanClient/app/build/intermediates/pre-dexed/release/ftp4j-1.7.2-64bb96a1e60950a113e4d48806e22b63629ea5c3.jar" />
+    </item>
+    <item
+        jar="/Users/Ma_for_Hao/work/HomeCode/AS/MeiTuanClient/app/libs/commons-net-3.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="643cc426b9f75aa111fac0fac0e52ff5d991a337">
+        <dex dex="/Users/Ma_for_Hao/work/HomeCode/AS/MeiTuanClient/app/build/intermediates/pre-dexed/release/commons-net-3.0.1-57a55de79e3c6188baaefdedf0afb69e6655cd7f.jar" />
+    </item>
+    <item
+        jar="/Users/Ma_for_Hao/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="/Users/Ma_for_Hao/work/HomeCode/AS/MeiTuanClient/app/build/intermediates/pre-dexed/release/support-v4-18.0.0-fde3b39ef9037e69ef774936f934f92fad401927.jar" />
+    </item>
+    <item
+        jar="/Users/Ma_for_Hao/work/HomeCode/AS/MeiTuanClient/app/libs/pinyin4j-2.5.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ae353005f973da1cd8545b54354504c2503f6865">
+        <dex dex="/Users/Ma_for_Hao/work/HomeCode/AS/MeiTuanClient/app/build/intermediates/pre-dexed/release/pinyin4j-2.5.0-3c5a2c48f29932cbbd870dd1fc8bdf82967d0283.jar" />
+    </item>
+    <item
+        jar="/Users/Ma_for_Hao/work/HomeCode/AS/MeiTuanClient/app/libs/libammsdk.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ef29ec238e1bad6c47297595fada8d7a7d794ff0">
+        <dex dex="/Users/Ma_for_Hao/work/HomeCode/AS/MeiTuanClient/app/build/intermediates/pre-dexed/release/libammsdk-63a934203b78b5df30edcc779d55c4452548f0d4.jar" />
+    </item>
+    <item
+        jar="/Users/Ma_for_Hao/work/HomeCode/AS/MeiTuanClient/app/libs/volley.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c3a7127079ec88fd22c96c4ccadfec2fd3d28998">
+        <dex dex="/Users/Ma_for_Hao/work/HomeCode/AS/MeiTuanClient/app/build/intermediates/pre-dexed/release/volley-e338f9ab88edbeedeaa6a95702d30e1905e1177c.jar" />
+    </item>
+    <item
+        jar="/Users/Ma_for_Hao/work/HomeCode/AS/MeiTuanClient/app/libs/android-async-http-1.4.5.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="77bf7cacf9cefe19dc105e5425d2eb1bb5285881">
+        <dex dex="/Users/Ma_for_Hao/work/HomeCode/AS/MeiTuanClient/app/build/intermediates/pre-dexed/release/android-async-http-1.4.5-5820a41bc8898747f8b82a1f1b294883eafd6f24.jar" />
+    </item>
+    <item
+        jar="/Users/Ma_for_Hao/work/HomeCode/AS/MeiTuanClient/app/libs/core.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="96b67e377ff4637ff1fa3bbe9ad7183773935f39">
+        <dex dex="/Users/Ma_for_Hao/work/HomeCode/AS/MeiTuanClient/app/build/intermediates/pre-dexed/release/core-9e9a95a6f5296b9e4ee8d75bfbc4beef9e2e7c9b.jar" />
+    </item>
+
+</items>

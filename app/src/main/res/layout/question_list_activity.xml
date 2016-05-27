@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/green"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/green"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="我的悄悄话"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageview_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_home_as_up_indicator" />
+
+        <TextView
+            android:id="@+id/imageview_back2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/imageview_back"
+            android:text="返回"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textview_collect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:gravity="center"
+        android:text="亲，还没有悄悄话哦。。。" />
+
+    <com.anjoyo.meituan.myview.MyListView
+        android:id="@+id/listview_collect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_weight="8"
+        android:cacheColorHint="#00000000"
+        android:divider="@android:color/transparent"
+        android:fadingEdge="none"
+        android:visibility="gone" >
+    </com.anjoyo.meituan.myview.MyListView>
+
+</LinearLayout>

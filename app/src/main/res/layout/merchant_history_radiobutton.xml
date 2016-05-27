@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/merchant_header"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/green" >
+
+    <RelativeLayout
+        android:id="@+id/back_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/green" >
+
+        <ImageView
+            android:id="@+id/detail_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_home_as_up_indicator" />
+
+        <TextView
+            android:id="@+id/imgView_mei2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/detail_button"
+            android:src="@drawable/ump_icon_meituan"
+            android:text="返回"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RadioButton
+        android:id="@+id/button_allmerchant"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/imgView_mei"
+        android:background="@color/green"
+        android:button="@null"
+        android:drawableBottom="@drawable/bottom_divider"
+        android:text="产品历程"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imgView_mei"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="@color/green"
+        android:src="@drawable/ump_icon_meituan"
+        android:visibility="invisible" />
+
+    <RadioButton
+        android:id="@+id/button_service"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/imageview_divide"
+        android:background="@color/green"
+        android:button="@null"
+        android:drawableBottom="@color/green"
+        android:text="服务历程"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imgView_mei3"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="@color/green"
+        android:src="@drawable/ump_icon_meituan"
+        android:visibility="invisible" />
+
+    <RadioButton
+        android:id="@+id/button_salemerchant"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/button_service"
+        android:background="@color/green"
+        android:button="@null"
+        android:drawableBottom="@color/green"
+        android:text="其他历程"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/imagebutton_map"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button_city"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:src="@drawable/ic_action_map"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imageview_divide"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/button_allmerchant"
+        android:src="@drawable/ump_header_bg" />
+
+</RelativeLayout>
